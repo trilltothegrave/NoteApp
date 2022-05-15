@@ -23,7 +23,7 @@ function showStaticNote() {
 showStaticNote();
 
 function showNotes() {
-    //
+    //Удаляет все прошлые заметки прежде чем добавить новую 
     document.querySelectorAll(".note").forEach(note => note.remove());
     //Создание блока новой заметки
     notes.forEach((note, id) => {
