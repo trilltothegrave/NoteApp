@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/pencil.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Заметки</title>
+</head>
+<body>
+
+<div class="wrapper">
+<div class="list_notes">
+</div>
+<div class="note_wrapper">
+    <div class="note_content">
+        <form action="#">
+            <div class="heading">
+                <input type="text" placeholder="Название" maxlength="20" spellcheck="false">
+            </div>
+            <div class="description">
+                <textarea placeholder="Текст" maxlength="500" spellcheck="false"></textarea>
+            </div>
+            <div class="settings">
+                <button class="create_btn">Новая заметка</button>
+                <button class="clear_btn" onclick="form.reset()">Очистить</button>
+                <button class="delete_btn">Удалить</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+    <script src="script.js"></script> 
+</body>
+</html>

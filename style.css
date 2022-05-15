@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vmin;
+}
+
+/*-------Список заметок-------*/
+.list_notes {
+    height: max-content;
+    width: 370px;
+    background-color: rgb(247, 246, 243);
+}
+
+.list_notes li {
+    height: 90px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all .3s ease;
+} 
+
+.list_notes li:hover {
+    background-color: rgb(232, 231, 228);
+}
+
+.note_content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.list_notes  p {
+    font-size: 24px;
+    line-height: 90px;
+    text-align: center;
+}
+
+/*-------Заметка-------*/
+.note_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.note_content {
+    width: 40vw;
+    height: 70vh;
+    background-color: transparent;
+}
+
+.note_content form {
+    height: 100%;
+}
+
+.note_content form :where(input, textarea){
+    width: 100%;
+    padding-left: 7px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: rgb(55, 53, 47);
+    box-shadow: 3px -2px 5px rgb(136, 136, 136);
+}
+
+textarea {
+    padding-top: 7px;
+}
+
+.note_content form input {
+    font-weight: 700;
+    font-size: 40px;
+    min-height: 1em;
+}
+
+.description {
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.note_content form textarea {
+    font-size: 18px;
+    height: inherit;
+    resize: none;
+    word-break: break-word;
+}
+
+/*---------Кнопки---------*/
+.settings {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+.create_btn, .clear_btn, .delete_btn{
+    height: 70px;
+    width: 160px;
+    
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.create_btn {
+    background: linear-gradient(45deg, #a3ffa3, #89e289);
+}
+
+.create_btn:hover {
+    box-shadow:  3px -3px 7px #88d488,
+                 -3px 3px 7px #afffaf; 
+}
+
+.create_btn:active {
+    box-shadow: none;
+}
+
+.clear_btn {
+    background: linear-gradient(45deg, #ffffff, #e9edf2);
+}
+
+.clear_btn:hover {
+    box-shadow:  3px -3px 9px #e2e9f0,
+                -3px 3px 9px #feffff;
+}
+
+.clear_btn:active {
+    box-shadow: none;
+}
+
+.delete_btn {
+    background: linear-gradient(45deg, #eb4444, #e34c4c);
+    margin-right: 0px;
+}
+
+.delete_btn:hover {
+    box-shadow:  1px -1px 5px #cf3c3c,
+                -1px 1px 5px #e94444;
+}
+
+.delete_btn:active {
+    box-shadow: none;
+}
